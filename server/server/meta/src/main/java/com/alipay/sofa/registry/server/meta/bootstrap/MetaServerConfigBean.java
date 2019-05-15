@@ -557,6 +557,11 @@ public class MetaServerConfigBean implements MetaServerConfig {
         return ValueConstants.RAFT_SERVER_GROUP;
     }
 
+    @Override
+    public void setRaftGroup(String raftGroup) {
+        ValueConstants.RAFT_SERVER_GROUP = raftGroup;
+    }
+
     /**
      * Getter method for property <tt>raftServerPort</tt>.
      *

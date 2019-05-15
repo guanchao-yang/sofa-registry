@@ -76,6 +76,8 @@ public interface MetaServerConfig {
 
     String getRaftGroup();
 
+    void setRaftGroup(String raftGroup);
+
     String getRaftDataPath();
 
     boolean isEnableMetrics();
