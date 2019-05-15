@@ -51,7 +51,7 @@ public class ValueConstants {
     private static final String  SYSTEM_RAFT_GROUP             = System
                                                                    .getProperty("RAFT_SERVER_GROUP");
 
-    public static  String   RAFT_SERVER_GROUP             = SYSTEM_RAFT_GROUP != null ? SYSTEM_RAFT_GROUP
+    public static String         RAFT_SERVER_GROUP             = SYSTEM_RAFT_GROUP != null ? SYSTEM_RAFT_GROUP
                                                                    : "RegistryGroup";
 
     public static final String   STOP_PUSH_DATA_SWITCH_DATA_ID = "session.stop.push.data.switch#@#9600#@#CONFIG";
