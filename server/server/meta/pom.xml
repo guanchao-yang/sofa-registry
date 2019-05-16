@@ -17,6 +17,13 @@
     </properties>
 
     <dependencies>
+        <!-- svm dependency begin -->
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+            <version>4.2.0</version>
+        </dependency>
+        <!-- svm dependency end -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>

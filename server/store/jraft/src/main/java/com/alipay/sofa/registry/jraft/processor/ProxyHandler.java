@@ -21,8 +21,6 @@ import com.alipay.sofa.registry.jraft.command.ProcessRequest;
 import com.alipay.sofa.registry.log.Logger;
 import com.alipay.sofa.registry.log.LoggerFactory;
 
-import java.lang.invoke.MethodHandle;
-import java.lang.invoke.MethodHandles;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
@@ -86,11 +84,11 @@ public class ProxyHandler implements InvocationHandler {
                 throw new RuntimeException(String.format("Can not find service %s from process!",
                     serviceId));
             }
-
+            // svm static compile
             Method method = Processor.getInstance().getWorkMethod(request);
-
-            MethodHandle methodHandle = MethodHandles.lookup().unreflect(method);
-            return methodHandle.bindTo(target).invokeWithArguments(request.getMethodArgs());
+            return method.invoke(target, request.getMethodArgs());
+//            MethodHandle methodHandle = MethodHandles.lookup().unreflect(method);
+//            return methodHandle.bindTo(target).invokeWithArguments(request.getMethodArgs());
         } catch (Throwable e) {
             LOGGER.error("Directly invoke read only service {} method {} error!",
                 request.getServiceName(), request.getMethodName(), e);
