@@ -87,8 +87,8 @@ public class ProxyHandler implements InvocationHandler {
             // svm static compile
             Method method = Processor.getInstance().getWorkMethod(request);
             return method.invoke(target, request.getMethodArgs());
-//            MethodHandle methodHandle = MethodHandles.lookup().unreflect(method);
-//            return methodHandle.bindTo(target).invokeWithArguments(request.getMethodArgs());
+            //            MethodHandle methodHandle = MethodHandles.lookup().unreflect(method);
+            //            return methodHandle.bindTo(target).invokeWithArguments(request.getMethodArgs());
         } catch (Throwable e) {
             LOGGER.error("Directly invoke read only service {} method {} error!",
                 request.getServiceName(), request.getMethodName(), e);
