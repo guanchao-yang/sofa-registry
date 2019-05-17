@@ -23,8 +23,6 @@ import com.alipay.sofa.registry.log.Logger;
 import com.alipay.sofa.registry.log.LoggerFactory;
 import com.alipay.sofa.registry.store.api.annotation.ReadOnLeader;
 
-import java.lang.invoke.MethodHandle;
-import java.lang.invoke.MethodHandles;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
@@ -105,8 +103,9 @@ public class Processor {
             }
 
             Object[] methodArg = request.getMethodArgs();
-            MethodHandle methodHandle = MethodHandles.lookup().unreflect(appServiceMethod);
-            Object ret = methodHandle.bindTo(target).invokeWithArguments(methodArg);
+//            MethodHandle methodHandle = MethodHandles.lookup().unreflect(appServiceMethod);
+//            Object ret = methodHandle.bindTo(target).invokeWithArguments(methodArg);
+            Object ret = appServiceMethod.invoke(target, methodArg);
             if (ret != null) {
                 return ProcessResponse.ok(ret).build();
             } else {
@@ -133,8 +132,9 @@ public class Processor {
 
         try {
             Object[] methodArg = request.getMethodArgs();
-            MethodHandle methodHandle = MethodHandles.lookup().unreflect(method);
-            Object ret = methodHandle.bindTo(target).invokeWithArguments(methodArg);
+//            MethodHandle methodHandle = MethodHandles.lookup().unreflect(method);
+//            Object ret = methodHandle.bindTo(target).invokeWithArguments(methodArg);
+            Object ret = method.invoke(target, methodArg);
             if (ret != null) {
                 return ProcessResponse.ok(ret).build();
             } else {
