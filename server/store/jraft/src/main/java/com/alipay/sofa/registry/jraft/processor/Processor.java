@@ -103,8 +103,8 @@ public class Processor {
             }
 
             Object[] methodArg = request.getMethodArgs();
-//            MethodHandle methodHandle = MethodHandles.lookup().unreflect(appServiceMethod);
-//            Object ret = methodHandle.bindTo(target).invokeWithArguments(methodArg);
+            //            MethodHandle methodHandle = MethodHandles.lookup().unreflect(appServiceMethod);
+            //            Object ret = methodHandle.bindTo(target).invokeWithArguments(methodArg);
             Object ret = appServiceMethod.invoke(target, methodArg);
             if (ret != null) {
                 return ProcessResponse.ok(ret).build();
@@ -132,8 +132,8 @@ public class Processor {
 
         try {
             Object[] methodArg = request.getMethodArgs();
-//            MethodHandle methodHandle = MethodHandles.lookup().unreflect(method);
-//            Object ret = methodHandle.bindTo(target).invokeWithArguments(methodArg);
+            //            MethodHandle methodHandle = MethodHandles.lookup().unreflect(method);
+            //            Object ret = methodHandle.bindTo(target).invokeWithArguments(methodArg);
             Object ret = method.invoke(target, methodArg);
             if (ret != null) {
                 return ProcessResponse.ok(ret).build();
