@@ -34,6 +34,7 @@ public class MetaApplication {
     private static final Logger LOGGER = LoggerFactory.getLogger(MetaApplication.class);
 
     public static void main(String[] args) {
+        System.out.println("runnning main step 1");
         // setup DefaultUncaughtExceptionHandler
         Thread.setDefaultUncaughtExceptionHandler((t, e) -> {
             LOGGER.error(String.format("UncaughtException in Thread(%s): %s", t.getName(), e.getMessage()), e);
