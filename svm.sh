@@ -13,8 +13,15 @@ fi
 
 CONFIG_PATH=./configs
 
-graalvm_home=~/tools/graalvm-ce-19.0.0
-svm=$graalvm_home/bin/native-image
+# GRAALVM_HOME must be set in environment
+if [ $GRAALVM_HOME ]; then
+    echo "GRAALVM_HOME = $GRAALVM_HOME"
+else
+    echo "error : GRAALVM_HOME is not set in environment"
+    exit 1
+fi
+svm=${GRAALVM_HOME}/bin/native-image
+echo "native image path is [$svm]"
 
 #$graalvm_home/bin/java  -agentlib:native-image-agent=config-output-dir=$CONFIG_PATH -jar server/server/meta/target/registry-server-meta-executable.jar
 
