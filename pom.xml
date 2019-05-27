@@ -83,6 +83,13 @@
         <argLine>-Dnetwork_interface_denylist=docker0</argLine>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>2.2.0.BUILD-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
     <dependencyManagement>
         <dependencies>
             <dependency>
