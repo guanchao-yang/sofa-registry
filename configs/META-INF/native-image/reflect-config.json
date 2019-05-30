@@ -385,12 +385,6 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"com.alipay.sofa.registry.server.meta.bootstrap.MetaServerConfiguration$ExecutorConfiguation",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
   "name":"com.alipay.sofa.registry.server.meta.bootstrap.MetaServerConfiguration$MetaDBConfiguration",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
