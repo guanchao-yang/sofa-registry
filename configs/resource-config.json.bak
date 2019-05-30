@@ -1,5 +1,6 @@
 {
   "resources":[
+    {"pattern":"com/sun/org/apache/xerces/internal/jaxp/SAXParserFactoryImpl.class"},
     {"pattern":"META-INF/native/libnetty_transport_native_epoll_x86_64.so"}, 
     {"pattern":"META-INF/services/javax.ws.rs.ext.RuntimeDelegate"}, 
     {"pattern":"META-INF/services/org.glassfish.hk2.extension.ServiceLocatorGenerator"}, 
@@ -10,8 +11,7 @@
     {"pattern":"META-INF/spring-autoconfigure-metadata.properties"}, 
     {"pattern":"banner.txt"}, 
     {"pattern":"com/alipay/remoting/log/logback/log-conf.xml"}, 
-    {"pattern":"com/alipay/sofa/registry/server/meta/"},
-    {"pattern":"com/sun/org/apache/xerces/internal/jaxp/SAXParserFactoryImpl.class"}, 
+    {"pattern":"com/alipay/sofa/registry/server/meta/"}, 
     {"pattern":"com/alipay/sofa/registry/server/meta/bootstrap/MetaServerConfiguration$ExecutorConfiguation.class"}, 
     {"pattern":"com/alipay/sofa/registry/server/meta/bootstrap/MetaServerConfiguration$MetaDBConfiguration.class"}, 
     {"pattern":"com/alipay/sofa/registry/server/meta/bootstrap/MetaServerConfiguration$MetaServerConfigBeanConfiguration.class"}, 
