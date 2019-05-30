@@ -1,0 +1,17 @@
+com.sun.crypto.provider.SunJCE$SecureRandomHolder
+java.net.PlainSocketImpl
+java.net.SocksSocketImpl
+java.util.UUID$Holder
+javax.net.ssl.SSLContext
+sun.nio.ch.EPollArrayWrapper
+sun.nio.ch.NativeThread
+sun.security.jca.JCAUtil$CachedSecureRandomHolder
+sun.security.krb5.Confounder
+sun.security.provider.NativePRNG
+sun.security.provider.NativePRNG$Blocking
+sun.security.provider.NativePRNG$NonBlocking
+sun.security.provider.NativeSeedGenerator
+sun.security.provider.SecureRandom$SeederHolder
+sun.security.provider.SeedGenerator
+sun.security.provider.SeedGenerator$ThreadedSeedGenerator
+sun.security.provider.SeedGenerator$URLSeedGenerator
