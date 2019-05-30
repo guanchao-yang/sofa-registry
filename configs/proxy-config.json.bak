@@ -6,5 +6,5 @@
   ["java.lang.reflect.GenericArrayType","org.springframework.core.SerializableTypeWrapper$SerializableTypeProxy","java.io.Serializable"],
   ["java.lang.reflect.ParameterizedType","org.springframework.core.SerializableTypeWrapper$SerializableTypeProxy","java.io.Serializable"],
   ["java.lang.reflect.TypeVariable","org.springframework.core.SerializableTypeWrapper$SerializableTypeProxy","java.io.Serializable"],
-  ["javax.ws.rs.Path","org.springframework.core.annotation.SynthesizedAnnotation"]
+  ["javax.ws.rs.Path","org.springframework.core.annotation.SynthesizedAnnotation"],
 ]
