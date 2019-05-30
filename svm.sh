@@ -11,7 +11,7 @@ cp newjars/spring-boot-graal-feature-0.5.0.BUILD-SNAPSHOT.jar tmp/BOOT-INF/lib/
 
 fi
 
-CONFIG_PATH=./configs
+CONFIG_PATH=configs
 
 # GRAALVM_HOME must be set in environment
 if [ $GRAALVM_HOME ]; then
@@ -23,13 +23,13 @@ fi
 svm=${GRAALVM_HOME}/bin/native-image
 echo "native image path is [$svm]"
 #svm=~/tools/graalvm-ee-19.0.0/jre/lib/svm/bin/native-image
-svm=~/tools/graalvm-ce-19.0.0/bin/native-image
+#svm=~/tools/graalvm-ce-19.0.0/bin/native-image
 #$graalvm_home/bin/java  -agentlib:native-image-agent=config-output-dir=$CONFIG_PATH -jar server/server/meta/target/registry-server-meta-executable.jar
 
 
 CONFIG_OPT="--no-server --allow-incomplete-classpath --report-unsupported-elements-at-runtime"
 #CONFIG_OPT="${CONFIG_OPT} --enable-url-protocols=http"
-CONFIG_OPT="${CONFIG_OPT} -H:+PrintClassInitialization"
+#CONFIG_OPT="${CONFIG_OPT} -H:+PrintClassInitialization"
 CONFIG_OPT="${CONFIG_OPT} -H:+ReportExceptionStackTraces"
 CONFIG_OPT="${CONFIG_OPT} -Dorg.springframework.boot.logging.LoggingSystem=none"
 #SVM_OPT="${SVM_OPT} --initialize-at-build-time=org.springframework.boot.logging.LoggingSystem"
@@ -80,8 +80,10 @@ WORKDIR=`pwd`
 
 cp -R tmp/META-INF tmp/BOOT-INF/classes
 export LIBPATH=`find tmp/BOOT-INF/lib | tr '\n' ':'`
-export CP=./tmp/BOOT-INF/classes:$LIBPATH:$CONFIG_PATH
-
+export CP=tmp/BOOT-INF/classes:$LIBPATH:$CONFIG_PATH:dynClass
+#$GRAALVM_HOME/bin/java -agentlib:native-image-agent=config-output-dir=tmp_config -cp $CP com.alipay.sofa.registry.server.meta.MetaApplication
+#mkdir dynClass
+#$GRAALVM_HOME/bin/java -cp $CP com.alipay.sofa.registry.server.meta.MetaApplication
 #echo $CP
 #Disable unsafe usage in netty. This option is provided by netty, not an univeral solution. A more general way
 #is to use Graal's substition mechenism (see "Unsafe memory access" in 
