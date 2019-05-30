@@ -28,7 +28,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version $Id: MetaApplication.java, v 0.1 2017-11-13 19:03 zhuoyu.sjw Exp $$
  */
 @EnableMetaServer
-@SpringBootApplication()
+@SpringBootApplication(proxyBeanMethods = false)
 public class MetaApplication {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MetaApplication.class);
