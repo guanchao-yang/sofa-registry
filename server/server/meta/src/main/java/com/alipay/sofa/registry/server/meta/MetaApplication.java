@@ -18,6 +18,7 @@ package com.alipay.sofa.registry.server.meta;
 
 import com.alipay.sofa.registry.log.Logger;
 import com.alipay.sofa.registry.log.LoggerFactory;
+import com.alipay.sofa.registry.server.meta.bootstrap.EnableMetaServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -26,7 +27,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author zhuoyu.sjw
  * @version $Id: MetaApplication.java, v 0.1 2017-11-13 19:03 zhuoyu.sjw Exp $$
  */
-//@EnableMetaServer
+@EnableMetaServer
 @SpringBootApplication(proxyBeanMethods = false)
 public class MetaApplication {
 
