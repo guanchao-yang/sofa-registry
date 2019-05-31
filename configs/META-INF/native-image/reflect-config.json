@@ -1413,9 +1413,6 @@
   "name":"javax.validation.executable.ExecutableValidator"
 },
 {
-  "name":"javax.websocket.server.ServerContainer"
-},
-{
   "name":"javax.ws.rs.GET",
   "allDeclaredMethods":true
 },
