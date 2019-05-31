@@ -2834,11 +2834,6 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true
-},
-{
   "name":"org.springframework.boot.autoconfigure.web.servlet.error.AbstractErrorController",
   "allDeclaredFields":true,
   "allDeclaredMethods":true
