@@ -2849,39 +2849,7 @@
   "allDeclaredFields":true,
   "allDeclaredMethods":true
 },
-{
-  "name":"org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$ErrorPageCustomizer",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true
-},
-{
-  "name":"org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$ErrorTemplateMissingCondition",
-  "methods":[{"name":"<init>","parameterTypes":[] }]
-},
-{
-  "name":"org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$StaticView",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "methods":[{"name":"getContentType","parameterTypes":[] }]
-},
-{
-  "name":"org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
+
 {
   "name":"org.springframework.boot.autoconfigure.web.servlet.error.ErrorViewResolver",
   "allPublicMethods":true
