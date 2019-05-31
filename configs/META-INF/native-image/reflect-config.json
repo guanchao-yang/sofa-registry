@@ -4,6 +4,14 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
+  "name":"com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.http.converter.FormHttpMessageConverter",
+  "fields":[ {"name":"partConverters"}]
+},
+{
   "name":"ch.qos.logback.classic.Level",
   "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
 },
@@ -1365,10 +1373,6 @@
   "name":"javax.servlet.MultipartConfigElement",
   "allDeclaredFields":true,
   "allDeclaredMethods":true
-},
-{
-  "name":"javax.servlet.Servlet",
-  "allPublicMethods":true
 },
 {
   "name":"javax.servlet.ServletConfig",
