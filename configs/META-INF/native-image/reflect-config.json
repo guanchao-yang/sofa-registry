@@ -1,7 +1,7 @@
 [
 {
- "name":"com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl",
- "methods":[{"name":"<init>","parameterTypes":[] }]
+  "name":"com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"ch.qos.logback.classic.Level",
@@ -313,8 +313,7 @@
   "name":"com.alipay.sofa.registry.server.meta.MetaApplication",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
-  "allDeclaredConstructors":true,
-  "methods":[{"name":"main","parameterTypes":["java.lang.String[]"] }]
+  "allDeclaredConstructors":true
 },
 {
   "name":"com.alipay.sofa.registry.server.meta.bootstrap.AbstractNodeConfigBean",
@@ -379,6 +378,12 @@
   ]
 },
 {
+  "name":"com.alipay.sofa.registry.server.meta.bootstrap.MetaServerConfiguration",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
   "name":"com.alipay.sofa.registry.server.meta.bootstrap.MetaServerInitializerConfiguration",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
@@ -411,6 +416,54 @@
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"setApplicationContext","parameterTypes":["org.springframework.context.ApplicationContext"] }]
+},
+{
+  "name":"com.alipay.sofa.registry.server.meta.bootstrap.configuration.ExecutorConfiguation",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"com.alipay.sofa.registry.server.meta.bootstrap.configuration.MetaDBConfiguration",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"com.alipay.sofa.registry.server.meta.bootstrap.configuration.MetaServerConfigBeanConfiguration",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"com.alipay.sofa.registry.server.meta.bootstrap.configuration.MetaServerRemotingConfiguration",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"com.alipay.sofa.registry.server.meta.bootstrap.configuration.MetaServerRepositoryConfiguration",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"com.alipay.sofa.registry.server.meta.bootstrap.configuration.MetaServerServiceConfiguration",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"com.alipay.sofa.registry.server.meta.bootstrap.configuration.MetaServerTaskConfiguration",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"com.alipay.sofa.registry.server.meta.bootstrap.configuration.ResourceConfiguration",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
 },
 {
   "name":"com.alipay.sofa.registry.server.meta.executor.ExecutorManager",
@@ -1169,6 +1222,7 @@
 {
   "name":"java.lang.String",
   "allDeclaredMethods":true,
+  "fields":[{"name":"value"}],
   "methods":[{"name":"<init>","parameterTypes":["java.lang.String"] }]
 },
 {
@@ -2338,7 +2392,6 @@
 },
 {
   "name":"org.springframework.beans.factory.BeanFactoryAware",
-  "allDeclaredMethods":true,
   "allPublicMethods":true
 },
 {
@@ -3558,14 +3611,6 @@
   "name":"org.springframework.cache.interceptor.CacheAspectSupport"
 },
 {
-  "name":"org.springframework.cglib.core.MethodWrapper$MethodWrapperKey",
-  "allDeclaredMethods":true
-},
-{
-  "name":"org.springframework.cglib.proxy.Enhancer$EnhancerKey",
-  "allDeclaredMethods":true
-},
-{
   "name":"org.springframework.context.ApplicationContext"
 },
 {
@@ -3636,11 +3681,6 @@
 {
   "name":"org.springframework.context.annotation.Configuration",
   "allDeclaredMethods":true
-},
-{
-  "name":"org.springframework.context.annotation.ConfigurationClassEnhancer$EnhancedConfiguration",
-  "allDeclaredMethods":true,
-  "allPublicMethods":true
 },
 {
   "name":"org.springframework.context.annotation.ConfigurationClassPostProcessor",
