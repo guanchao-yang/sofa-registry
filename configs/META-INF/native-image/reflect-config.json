@@ -3521,11 +3521,6 @@
   ]
 },
 {
-  "name":"org.springframework.web.accept.ContentNegotiationManager",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true
-},
-{
   "name":"org.springframework.web.accept.ContentNegotiationStrategy",
   "allPublicMethods":true
 },
@@ -3744,33 +3739,6 @@
   "name":"org.springframework.web.servlet.config.annotation.ViewResolverRegistry"
 },
 {
-  "name":"org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "methods":[
-    {"name":"<init>","parameterTypes":[] }, 
-    {"name":"beanNameHandlerMapping","parameterTypes":["org.springframework.format.support.FormattingConversionService","org.springframework.web.servlet.resource.ResourceUrlProvider"] }, 
-    {"name":"defaultServletHandlerMapping","parameterTypes":[] }, 
-    {"name":"getApplicationContext","parameterTypes":[] }, 
-    {"name":"getServletContext","parameterTypes":[] }, 
-    {"name":"handlerExceptionResolver","parameterTypes":["org.springframework.web.accept.ContentNegotiationManager"] }, 
-    {"name":"handlerFunctionAdapter","parameterTypes":[] }, 
-    {"name":"httpRequestHandlerAdapter","parameterTypes":[] }, 
-    {"name":"mvcHandlerMappingIntrospector","parameterTypes":[] }, 
-    {"name":"mvcPathMatcher","parameterTypes":[] }, 
-    {"name":"mvcResourceUrlProvider","parameterTypes":[] }, 
-    {"name":"mvcUriComponentsContributor","parameterTypes":["org.springframework.format.support.FormattingConversionService","org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"] }, 
-    {"name":"mvcUrlPathHelper","parameterTypes":[] }, 
-    {"name":"mvcViewResolver","parameterTypes":["org.springframework.web.accept.ContentNegotiationManager"] }, 
-    {"name":"resourceHandlerMapping","parameterTypes":["org.springframework.web.util.UrlPathHelper","org.springframework.util.PathMatcher","org.springframework.web.accept.ContentNegotiationManager","org.springframework.format.support.FormattingConversionService","org.springframework.web.servlet.resource.ResourceUrlProvider"] }, 
-    {"name":"routerFunctionMapping","parameterTypes":["org.springframework.format.support.FormattingConversionService","org.springframework.web.servlet.resource.ResourceUrlProvider"] }, 
-    {"name":"setApplicationContext","parameterTypes":["org.springframework.context.ApplicationContext"] }, 
-    {"name":"setServletContext","parameterTypes":["javax.servlet.ServletContext"] }, 
-    {"name":"simpleControllerHandlerAdapter","parameterTypes":[] }, 
-    {"name":"viewControllerHandlerMapping","parameterTypes":["org.springframework.util.PathMatcher","org.springframework.web.util.UrlPathHelper","org.springframework.format.support.FormattingConversionService","org.springframework.web.servlet.resource.ResourceUrlProvider"] }
-  ]
-},
-{
   "name":"org.springframework.web.servlet.config.annotation.WebMvcConfigurer",
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -3912,34 +3880,6 @@
   "methods":[
     {"name":"afterPropertiesSet","parameterTypes":[] }, 
     {"name":"registerMapping","parameterTypes":["java.lang.Object","java.lang.Object","java.lang.reflect.Method"] }
-  ]
-},
-{
-  "name":"org.springframework.web.servlet.resource.ResourceHttpRequestHandler",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "methods":[
-    {"name":"afterPropertiesSet","parameterTypes":[] }, 
-    {"name":"getContentNegotiationManager","parameterTypes":[] }, 
-    {"name":"getCorsConfiguration","parameterTypes":["javax.servlet.http.HttpServletRequest"] }, 
-    {"name":"getLocations","parameterTypes":[] }, 
-    {"name":"getResourceHttpMessageConverter","parameterTypes":[] }, 
-    {"name":"getResourceRegionHttpMessageConverter","parameterTypes":[] }, 
-    {"name":"getResourceResolvers","parameterTypes":[] }, 
-    {"name":"getResourceTransformers","parameterTypes":[] }, 
-    {"name":"getUrlPathHelper","parameterTypes":[] }, 
-    {"name":"handleRequest","parameterTypes":["javax.servlet.http.HttpServletRequest","javax.servlet.http.HttpServletResponse"] }, 
-    {"name":"setContentNegotiationManager","parameterTypes":["org.springframework.web.accept.ContentNegotiationManager"] }, 
-    {"name":"setCorsConfiguration","parameterTypes":["org.springframework.web.cors.CorsConfiguration"] }, 
-    {"name":"setEmbeddedValueResolver","parameterTypes":["org.springframework.util.StringValueResolver"] }, 
-    {"name":"setLocationValues","parameterTypes":["java.util.List"] }, 
-    {"name":"setLocations","parameterTypes":["java.util.List"] }, 
-    {"name":"setResourceHttpMessageConverter","parameterTypes":["org.springframework.http.converter.ResourceHttpMessageConverter"] }, 
-    {"name":"setResourceRegionHttpMessageConverter","parameterTypes":["org.springframework.http.converter.ResourceRegionHttpMessageConverter"] }, 
-    {"name":"setResourceResolvers","parameterTypes":["java.util.List"] }, 
-    {"name":"setResourceTransformers","parameterTypes":["java.util.List"] }, 
-    {"name":"setUrlPathHelper","parameterTypes":["org.springframework.web.util.UrlPathHelper"] }, 
-    {"name":"toString","parameterTypes":[] }
   ]
 },
 {
