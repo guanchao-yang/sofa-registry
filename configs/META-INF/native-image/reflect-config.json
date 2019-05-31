@@ -2828,47 +2828,6 @@
   "allDeclaredMethods":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allPublicMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true,
-  "methods":[
-    {"name":"addFormatters","parameterTypes":["org.springframework.format.FormatterRegistry"] }, 
-    {"name":"addResourceHandlers","parameterTypes":["org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry"] }, 
-    {"name":"configureAsyncSupport","parameterTypes":["org.springframework.web.servlet.config.annotation.AsyncSupportConfigurer"] }, 
-    {"name":"configureContentNegotiation","parameterTypes":["org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer"] }, 
-    {"name":"configureMessageConverters","parameterTypes":["java.util.List"] }, 
-    {"name":"configurePathMatch","parameterTypes":["org.springframework.web.servlet.config.annotation.PathMatchConfigurer"] }, 
-    {"name":"getMessageCodesResolver","parameterTypes":[] }, 
-    {"name":"setResourceLoader","parameterTypes":["org.springframework.core.io.ResourceLoader"] }
-  ]
-},
-{
-  "name":"org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true,
-  "methods":[{"name":"setResourceLoader","parameterTypes":["org.springframework.core.io.ResourceLoader"] }]
-},
-{
-  "name":"org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconRequestHandler",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true
-},
-{
   "name":"org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
