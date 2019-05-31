@@ -1375,6 +1375,7 @@
   "allDeclaredMethods":true
 },
 {
+<<<<<<< HEAD
   "name":"javax.servlet.ServletConfig",
   "allPublicMethods":true
 },
@@ -1417,6 +1418,54 @@
   "name":"javax.validation.executable.ExecutableValidator"
 },
 {
+=======
+  "name":"javax.servlet.Servlet",
+  "allPublicMethods":true
+},
+{
+  "name":"javax.servlet.ServletConfig",
+  "allPublicMethods":true
+},
+{
+  "name":"javax.servlet.ServletContext",
+  "allDeclaredMethods":true,
+  "allPublicMethods":true
+},
+{
+  "name":"javax.servlet.ServletRegistration"
+},
+{
+  "name":"javax.servlet.ServletRequest"
+},
+{
+  "name":"javax.servlet.http.HttpServlet",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"service","parameterTypes":["javax.servlet.ServletRequest","javax.servlet.ServletResponse"] }]
+},
+{
+  "name":"javax.servlet.http.PushBuilder"
+},
+{
+  "name":"javax.sql.DataSource"
+},
+{
+  "name":"javax.validation.Validator",
+  "allDeclaredMethods":true,
+  "allPublicMethods":true
+},
+{
+  "name":"javax.validation.ValidatorFactory",
+  "allPublicMethods":true
+},
+{
+  "name":"javax.validation.bootstrap.GenericBootstrap"
+},
+{
+  "name":"javax.validation.executable.ExecutableValidator"
+},
+{
+>>>>>>> b33c9f02df2ee98dd965a3a0bff511e5a534d945
   "name":"javax.ws.rs.GET",
   "allDeclaredMethods":true
 },
@@ -1642,6 +1691,7 @@
 },
 {
   "name":"org.glassfish.jersey.jaxb.internal.JaxbAutoDiscoverable",
+<<<<<<< HEAD
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true
@@ -1654,11 +1704,20 @@
 },
 {
   "name":"org.glassfish.jersey.jaxb.internal.JaxbParamConverterBinder",
+=======
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"org.glassfish.jersey.jaxb.internal.JaxbMessagingBinder",
+>>>>>>> b33c9f02df2ee98dd965a3a0bff511e5a534d945
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
 },
 {
+<<<<<<< HEAD
   "name":"org.glassfish.jersey.jaxb.internal.JaxbStringReaderProvider",
   "allDeclaredFields":true,
   "allDeclaredMethods":true
@@ -1671,39 +1730,68 @@
 },
 {
   "name":"org.glassfish.jersey.jaxb.internal.XmlCollectionJaxbProvider",
+=======
+  "name":"org.glassfish.jersey.jaxb.internal.JaxbParamConverterBinder",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allPublicMethods":true
+},
+{
+  "name":"org.glassfish.jersey.jaxb.internal.JaxbStringReaderProvider",
+>>>>>>> b33c9f02df2ee98dd965a3a0bff511e5a534d945
   "allDeclaredFields":true,
   "allDeclaredMethods":true
 },
 {
+<<<<<<< HEAD
   "name":"org.glassfish.jersey.jaxb.internal.XmlCollectionJaxbProvider$App",
+=======
+  "name":"org.glassfish.jersey.jaxb.internal.JaxbStringReaderProvider$RootElementProvider",
+>>>>>>> b33c9f02df2ee98dd965a3a0bff511e5a534d945
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true
 },
 {
+<<<<<<< HEAD
   "name":"org.glassfish.jersey.jaxb.internal.XmlCollectionJaxbProvider$General",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"org.glassfish.jersey.jaxb.internal.XmlCollectionJaxbProvider$Text",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"org.glassfish.jersey.jaxb.internal.XmlJaxbElementProvider",
+=======
+  "name":"org.glassfish.jersey.jaxb.internal.XmlCollectionJaxbProvider",
+>>>>>>> b33c9f02df2ee98dd965a3a0bff511e5a534d945
   "allDeclaredFields":true,
   "allDeclaredMethods":true
 },
 {
-  "name":"org.glassfish.jersey.jaxb.internal.XmlJaxbElementProvider$App",
+<<<<<<< HEAD
+  "name":"org.glassfish.jersey.jaxb.internal.XmlCollectionJaxbProvider$Text",
+=======
+  "name":"org.glassfish.jersey.jaxb.internal.XmlCollectionJaxbProvider$App",
+>>>>>>> b33c9f02df2ee98dd965a3a0bff511e5a534d945
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true
 },
 {
+<<<<<<< HEAD
+  "name":"org.glassfish.jersey.jaxb.internal.XmlJaxbElementProvider",
+=======
+  "name":"org.glassfish.jersey.jaxb.internal.XmlCollectionJaxbProvider$General",
+>>>>>>> b33c9f02df2ee98dd965a3a0bff511e5a534d945
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+<<<<<<< HEAD
+  "name":"org.glassfish.jersey.jaxb.internal.XmlJaxbElementProvider$App",
+=======
+  "name":"org.glassfish.jersey.jaxb.internal.XmlCollectionJaxbProvider$Text",
+>>>>>>> b33c9f02df2ee98dd965a3a0bff511e5a534d945
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+<<<<<<< HEAD
   "name":"org.glassfish.jersey.jaxb.internal.XmlJaxbElementProvider$General",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
@@ -1711,28 +1799,72 @@
 },
 {
   "name":"org.glassfish.jersey.jaxb.internal.XmlJaxbElementProvider$Text",
+=======
+  "name":"org.glassfish.jersey.jaxb.internal.XmlJaxbElementProvider",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.glassfish.jersey.jaxb.internal.XmlJaxbElementProvider$App",
+>>>>>>> b33c9f02df2ee98dd965a3a0bff511e5a534d945
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true
 },
 {
+<<<<<<< HEAD
   "name":"org.glassfish.jersey.jaxb.internal.XmlRootElementJaxbProvider",
   "allDeclaredFields":true,
   "allDeclaredMethods":true
 },
 {
   "name":"org.glassfish.jersey.jaxb.internal.XmlRootElementJaxbProvider$App",
+=======
+  "name":"org.glassfish.jersey.jaxb.internal.XmlJaxbElementProvider$General",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true
 },
 {
+  "name":"org.glassfish.jersey.jaxb.internal.XmlJaxbElementProvider$Text",
+>>>>>>> b33c9f02df2ee98dd965a3a0bff511e5a534d945
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+<<<<<<< HEAD
   "name":"org.glassfish.jersey.jaxb.internal.XmlRootElementJaxbProvider$General",
+=======
+  "name":"org.glassfish.jersey.jaxb.internal.XmlRootElementJaxbProvider",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.glassfish.jersey.jaxb.internal.XmlRootElementJaxbProvider$App",
+>>>>>>> b33c9f02df2ee98dd965a3a0bff511e5a534d945
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true
 },
 {
+<<<<<<< HEAD
+  "name":"org.glassfish.jersey.jaxb.internal.XmlRootElementJaxbProvider$Text",
+=======
+  "name":"org.glassfish.jersey.jaxb.internal.XmlRootElementJaxbProvider$General",
+>>>>>>> b33c9f02df2ee98dd965a3a0bff511e5a534d945
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+<<<<<<< HEAD
+  "name":"org.glassfish.jersey.jaxb.internal.XmlRootObjectJaxbProvider",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+=======
   "name":"org.glassfish.jersey.jaxb.internal.XmlRootElementJaxbProvider$Text",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
@@ -1744,6 +1876,7 @@
   "allDeclaredMethods":true
 },
 {
+>>>>>>> b33c9f02df2ee98dd965a3a0bff511e5a534d945
   "name":"org.glassfish.jersey.jaxb.internal.XmlRootObjectJaxbProvider$App",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
