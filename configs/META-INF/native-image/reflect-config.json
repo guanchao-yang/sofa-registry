@@ -1470,22 +1470,6 @@
   "name":"javax.xml.ws.WebServiceRef"
 },
 {
-  "name":"org.apache.coyote.Request",
-  "methods":[{"name":"<init>","parameterTypes":[] }]
-},
-{
-  "name":"org.apache.coyote.Response",
-  "methods":[{"name":"<init>","parameterTypes":[] }]
-},
-{
-  "name":"org.apache.coyote.UpgradeProtocol"
-},
-{
-  "name":"org.apache.coyote.http11.Http11NioProtocol",
-  "allPublicMethods":true,
-  "methods":[{"name":"<init>","parameterTypes":[] }]
-},
-{
   "name":"org.apache.logging.log4j.LogManager"
 },
 {
