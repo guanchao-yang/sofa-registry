@@ -1144,16 +1144,6 @@
   ]
 },
 {
-  "name":"com.fasterxml.jackson.datatype.jsr310.JavaTimeModule",
-  "methods":[{"name":"<init>","parameterTypes":[] }]
-},
-{
-  "name":"com.fasterxml.jackson.module.paramnames.ParameterNamesModule",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "methods":[{"name":"setupModule","parameterTypes":["com.fasterxml.jackson.databind.Module$SetupContext"] }]
-},
-{
   "name":"com.google.protobuf.Extension"
 },
 {
