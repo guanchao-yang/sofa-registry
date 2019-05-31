@@ -189,8 +189,16 @@
     {"pattern":"org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfiguration.class"}, 
     {"pattern":"org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration\\$EmbeddedJetty.class"}, 
     {"pattern":"org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration\\$EmbeddedTomcat.class"}, 
-    {"pattern":"org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration\\$EmbeddedUndertow.class"}, 
-    {"pattern":"org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration\\$EnableWebMvcConfiguration.class"}, 
+    {"pattern":"org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration\\$EmbeddedUndertow.class"},
+
+    {"pattern":"org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfiguration.BeanPostProcessorsRegistrar.class"},
+    {"pattern":"org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfiguration.class"},
+    {"pattern":"org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration.EmbeddedJetty.class"},
+    {"pattern":"org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration.EmbeddedTomcat.class"},
+    {"pattern":"org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration.EmbeddedUndertow.class"},
+
+
+    {"pattern":"org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration\\$EnableWebMvcConfiguration.class"},
     {"pattern":"org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration\\$OptionalPathExtensionContentNegotiationStrategy.class"}, 
     {"pattern":"org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration\\$ResourceChainCustomizerConfiguration.class"}, 
     {"pattern":"org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration\\$ResourceChainResourceHandlerRegistrationCustomizer.class"}, 
