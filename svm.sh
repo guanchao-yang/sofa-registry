@@ -8,7 +8,8 @@ unzip server/server/meta/target/registry-server-meta-executable.jar -d tmp/
 #We have modified MethodHandle usages in jraft
 cp newjars/jraft-core-1.2.3.jar tmp/BOOT-INF/lib/jraft-core-1.2.4.jar
 cp newjars/spring-boot-graal-feature-0.5.0.BUILD-SNAPSHOT.jar tmp/BOOT-INF/lib/
-
+cp newjars/spring-context-5.2.0.M2.jar tmp/BOOT-INF/lib/spring-context-5.2.0.M2.jar
+cp newjars/spring-core-5.2.0.M2.jar tmp/BOOT-INF/lib/spring-core-5.2.0.M2.jar
 fi
 
 CONFIG_PATH=configs
