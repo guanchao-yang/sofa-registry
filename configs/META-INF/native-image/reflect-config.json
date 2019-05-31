@@ -3397,9 +3397,6 @@
   ]
 },
 {
-  "name":"org.springframework.http.codec.CodecConfigurer"
-},
-{
   "name":"org.springframework.http.converter.AbstractGenericHttpMessageConverter",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
