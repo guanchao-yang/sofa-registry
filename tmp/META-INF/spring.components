@@ -1,5 +1,5 @@
 #
-#Thu May 30 17:31:54 CST 2019
+#Fri May 31 13:30:11 CST 2019
 com.alipay.sofa.registry.server.meta.bootstrap.configuration.ResourceConfiguration=org.springframework.stereotype.Component
 com.alipay.sofa.registry.server.meta.bootstrap.configuration.MetaServerConfigBeanConfiguration=org.springframework.stereotype.Component
 com.alipay.sofa.registry.server.meta.MetaApplication=org.springframework.stereotype.Component
