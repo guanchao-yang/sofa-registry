@@ -11,5 +11,5 @@
   ["javax.ws.rs.Path","org.springframework.core.annotation.SynthesizedAnnotation"],
   ["org.springframework.boot.context.properties.ConfigurationProperties","org.springframework.core.annotation.SynthesizedAnnotation"],
   ["org.springframework.context.annotation.Lazy","org.springframework.core.annotation.SynthesizedAnnotation"],
-  ["org.springframework.web.bind.annotation.RequestMapping","org.springframework.core.annotation.SynthesizedAnnotation"]
+  ["org.springframework.core.annotation.SynthesizedAnnotation"]
 ]
