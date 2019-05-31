@@ -3090,20 +3090,6 @@
   "allPublicMethods":true
 },
 {
-  "name":"org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedContext",
-  "allPublicMethods":true
-},
-{
-  "name":"org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader",
-  "allPublicMethods":true,
-  "methods":[{"name":"<init>","parameterTypes":["java.lang.ClassLoader"] }]
-},
-{
-  "name":"org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true
-},
-{
   "name":"org.springframework.boot.web.server.AbstractConfigurableWebServerFactory",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
