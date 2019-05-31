@@ -3193,10 +3193,6 @@
   ]
 },
 {
-  "name":"org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext",
-  "methods":[{"name":"<init>","parameterTypes":[] }]
-},
-{
   "name":"org.springframework.boot.web.servlet.error.DefaultErrorAttributes",
   "allDeclaredFields":true,
   "allDeclaredMethods":true
