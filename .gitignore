@@ -17,3 +17,5 @@ dependency-reduced-pom.xml
 # log
 logs/
 *.log
+
+com.alipay.sofa.registry.*
