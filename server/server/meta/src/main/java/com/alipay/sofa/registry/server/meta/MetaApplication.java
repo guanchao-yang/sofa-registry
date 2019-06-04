@@ -22,8 +22,6 @@ import com.alipay.sofa.registry.server.meta.bootstrap.EnableMetaServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.lang.reflect.Constructor;
-
 /**
  *
  * @author zhuoyu.sjw
@@ -36,14 +34,6 @@ public class MetaApplication {
     private static final Logger LOGGER = LoggerFactory.getLogger(MetaApplication.class);
 
     public static void main(String[] args) {
-        Constructor<?>[] constructors = java.sql.Date.class.getDeclaredConstructors();
-        if (constructors.length <= 0) {
-            System.err.println("java.sql.Date no Constructors");
-        }
-        for (int i = 0; i < constructors.length; i++) {
-            System.err.println("java.sql.Date Constructor size=" + constructors.length +
-                    " and current index=" + i + " is " + constructors[i]);
-        }
         System.out.println("runnning main step 1");
         // setup DefaultUncaughtExceptionHandler
         Thread.setDefaultUncaughtExceptionHandler((t, e) -> {
