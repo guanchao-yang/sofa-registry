@@ -37,6 +37,9 @@ public class MetaApplication {
 
     public static void main(String[] args) {
         Constructor<?>[] constructors = java.sql.Date.class.getDeclaredConstructors();
+        if (constructors.length <= 0) {
+            System.err.println("java.sql.Date no Constructors");
+        }
         for (int i = 0; i < constructors.length; i++) {
             System.err.println("java.sql.Date Constructor size=" + constructors.length +
                     " and current index=" + i + " is " + constructors[i]);
