@@ -1,15 +1,5 @@
 [
 {
-  "name":"java.sql.Date",
-  "allDeclaredConstructors" : true,
-  "allPublicConstructors" : true,
-  "allDeclaredMethods" : true,
-  "allPublicMethods" : true,
-  "allDeclaredClasses" : true,
-  "allPublicClasses" : true,
-  "methods":[{"name":"<init>","parameterTypes":["long"] }]
-},
-{
   "name":"ch.qos.logback.classic.Level",
   "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
 },
