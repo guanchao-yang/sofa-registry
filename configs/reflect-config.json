@@ -2,7 +2,8 @@
 {
   "name":"java.sql.Date",
   "allDeclaredMethods":true,
-  "allPublicMethods":true
+  "allPublicMethods":true,
+  "allPublicConstructors":true
 },
 {
   "name":"ch.qos.logback.classic.Level",
