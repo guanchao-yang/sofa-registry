@@ -1,9 +1,8 @@
 {
   "resources":[
     {"pattern":"com/sun/org/apache/xerces/internal/jaxp/SAXParserFactoryImpl.class"},
-    {"pattern":"java/sql/Date.class"},
-    {"pattern":"java/util/Date.class"},
-    {"pattern":"META-INF/native/libnetty_transport_native_epoll_x86_64.so"}, 
+    {"pattern":"security/serialize.blacklist"},
+    {"pattern":"META-INF/native/libnetty_transport_native_epoll_x86_64.so"},
     {"pattern":"META-INF/services/javax.ws.rs.ext.RuntimeDelegate"}, 
     {"pattern":"META-INF/services/org.glassfish.hk2.extension.ServiceLocatorGenerator"}, 
     {"pattern":"META-INF/services/org.glassfish.jersey.internal.inject.InjectionManagerFactory"}, 
