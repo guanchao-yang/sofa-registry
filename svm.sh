@@ -34,6 +34,8 @@ CONFIG_OPT="--no-server --allow-incomplete-classpath --report-unsupported-elemen
 CONFIG_OPT="${CONFIG_OPT} -H:+ReportExceptionStackTraces"
 CONFIG_OPT="${CONFIG_OPT} -Dorg.springframework.boot.logging.LoggingSystem=none"
 CONFIG_OPT="${CONFIG_OPT} -H:ReflectionConfigurationFiles=./configs/reflect-config.json"
+CONFIG_OPT="${CONFIG_OPT} -H:ResourceConfigurationFiles=./configs/resource-config.json"
+
 
 #SVM_OPT="${SVM_OPT} --initialize-at-build-time=org.springframework.boot.logging.LoggingSystem"
 #SVM_OPT="${SVM_OPT} --initialize-at-build-time=org.springframework.util.Assert"
@@ -77,6 +79,7 @@ SVM_OPT="${SVM_OPT} --initialize-at-run-time=org.glassfish.jersey.model.internal
 SVM_OPT="${SVM_OPT} --initialize-at-run-time=com.alipay.sofa.jraft.util.internal.UnsafeUtil"
 SVM_OPT="${SVM_OPT} --initialize-at-run-time=com.google.protobuf.UnsafeUtil"
 SVM_OPT="${SVM_OPT} --initialize-at-run-time=com.lmax.disruptor.RingBufferFields"
+SVM_OPT="${SVM_OPT} --initialize-at-run-time=com.alipay.hessian.internal.InternalNameBlackListFilter"
 #SVM_OPT="${SVM_OPT} --rerun-class-initialization-at-runtime=com.lmax.disruptor.RingBufferFields"
 
 WORKDIR=`pwd`
