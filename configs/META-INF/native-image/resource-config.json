@@ -1,5 +1,6 @@
 {
   "resources":[
+    {"pattern":"security/serialize.blacklist"},
     {"pattern":"META-INF/native/libnetty_transport_native_epoll_x86_64.so"}, 
     {"pattern":"META-INF/services/javax.validation.spi.ValidationProvider"}, 
     {"pattern":"META-INF/services/javax.ws.rs.ext.RuntimeDelegate"}, 

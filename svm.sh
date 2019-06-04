@@ -33,8 +33,6 @@ CONFIG_OPT="--no-server --allow-incomplete-classpath --report-unsupported-elemen
 #CONFIG_OPT="${CONFIG_OPT} -H:+PrintClassInitialization"
 CONFIG_OPT="${CONFIG_OPT} -H:+ReportExceptionStackTraces"
 CONFIG_OPT="${CONFIG_OPT} -Dorg.springframework.boot.logging.LoggingSystem=none"
-CONFIG_OPT="${CONFIG_OPT} -H:ReflectionConfigurationFiles=./configs/reflect-config.json"
-CONFIG_OPT="${CONFIG_OPT} -H:ResourceConfigurationFiles=./configs/resource-config.json"
 
 
 #SVM_OPT="${SVM_OPT} --initialize-at-build-time=org.springframework.boot.logging.LoggingSystem"
