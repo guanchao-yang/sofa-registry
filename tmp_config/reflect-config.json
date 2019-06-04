@@ -2,7 +2,8 @@
 {
   "name":"java.sql.Date",
   "allDeclaredMethods":true,
-  "allPublicMethods":true},
+  "allPublicMethods":true
+},
 {
   "name":"ch.qos.logback.classic.Level",
   "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
