@@ -356,54 +356,6 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"com.alipay.sofa.registry.server.meta.bootstrap.MetaServerConfiguration$ExecutorConfiguation",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"com.alipay.sofa.registry.server.meta.bootstrap.MetaServerConfiguration$MetaDBConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"com.alipay.sofa.registry.server.meta.bootstrap.MetaServerConfiguration$MetaServerConfigBeanConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"com.alipay.sofa.registry.server.meta.bootstrap.MetaServerConfiguration$MetaServerRemotingConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"com.alipay.sofa.registry.server.meta.bootstrap.MetaServerConfiguration$MetaServerRepositoryConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"com.alipay.sofa.registry.server.meta.bootstrap.MetaServerConfiguration$MetaServerServiceConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"com.alipay.sofa.registry.server.meta.bootstrap.MetaServerConfiguration$MetaServerTaskConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
-  "name":"com.alipay.sofa.registry.server.meta.bootstrap.MetaServerConfiguration$ResourceConfiguration",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true
-},
-{
   "name":"com.alipay.sofa.registry.server.meta.bootstrap.MetaServerInitializerConfiguration",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
