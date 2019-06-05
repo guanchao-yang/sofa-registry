@@ -115,12 +115,16 @@ public class MetaStoreService implements StoreService<MetaNode> {
         System.err.println("added current node : " + metaNode);
 
         String ipAddress = metaNode.getNodeUrl().getIpAddress();
-
+        System.err.println("step 1");
         write.lock();
         try {
+            //todo xuelian
+            System.err.println("step put before");
             //存放到repository（自动通过jraft同步给集群）
             metaRepositoryService.put(ipAddress, new RenewDecorate(metaNode,
                 RenewDecorate.DEFAULT_DURATION_SECS));
+            //todo xuelian
+            System.err.println("step put after");
 
             //触发通知(需要通知data/session)
             nodeChangeResult = getNodeChangeResult();
