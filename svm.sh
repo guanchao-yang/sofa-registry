@@ -78,8 +78,6 @@ SVM_OPT="${SVM_OPT} --initialize-at-run-time=com.alipay.sofa.jraft.util.internal
 SVM_OPT="${SVM_OPT} --initialize-at-run-time=com.google.protobuf.UnsafeUtil"
 SVM_OPT="${SVM_OPT} --initialize-at-run-time=com.lmax.disruptor.RingBufferFields"
 SVM_OPT="${SVM_OPT} --initialize-at-run-time=com.alipay.hessian.internal.InternalNameBlackListFilter"
-
-SVM_OPT="${SVM_OPT} --initialize-at-run-time=com.alipay.sofa.registry.server.meta.repository.NodeRepository"
 #SVM_OPT="${SVM_OPT} --rerun-class-initialization-at-runtime=com.lmax.disruptor.RingBufferFields"
 
 WORKDIR=`pwd`

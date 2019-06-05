@@ -98,7 +98,8 @@ public class MetaRepositoryService extends AbstractSnapshotProcess
                     metaNodeRepository = nodeRepository;
                 }
             }
-
+            //todo xuelian
+            System.err.println("setversion : " + System.currentTimeMillis());
             metaNodeRepository.setVersion(System.currentTimeMillis());
 
             Map<String/*ipAddress*/, RenewDecorate<MetaNode>> metaNodes = metaNodeRepository
