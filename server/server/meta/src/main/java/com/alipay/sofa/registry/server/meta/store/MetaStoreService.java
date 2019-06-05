@@ -116,7 +116,7 @@ public class MetaStoreService implements StoreService<MetaNode> {
 
         String ipAddress = metaNode.getNodeUrl().getIpAddress();
         System.err.println("step 1");
-//        write.lock();
+        //        write.lock();
         System.err.println("step 2");
         try {
             //todo xuelian
@@ -125,7 +125,7 @@ public class MetaStoreService implements StoreService<MetaNode> {
             try {
                 //存放到repository（自动通过jraft同步给集群）
                 metaRepositoryService.put(ipAddress, new RenewDecorate(metaNode,
-                        RenewDecorate.DEFAULT_DURATION_SECS));
+                    RenewDecorate.DEFAULT_DURATION_SECS));
                 //todo xuelian
             } catch (Exception e) {
                 e.printStackTrace();
@@ -141,7 +141,7 @@ public class MetaStoreService implements StoreService<MetaNode> {
             LOGGER.info("Add single meta node {} success!", metaNode);
 
         } finally {
-//            write.unlock();
+            //            write.unlock();
         }
 
         return nodeChangeResult;
