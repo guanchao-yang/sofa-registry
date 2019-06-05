@@ -111,6 +111,8 @@ public class MetaStoreService implements StoreService<MetaNode> {
     @Override
     public NodeChangeResult addNode(MetaNode metaNode) {
         NodeChangeResult nodeChangeResult;
+        // todo xuelian
+        System.err.println("added current node : " + metaNode);
 
         String ipAddress = metaNode.getNodeUrl().getIpAddress();
 

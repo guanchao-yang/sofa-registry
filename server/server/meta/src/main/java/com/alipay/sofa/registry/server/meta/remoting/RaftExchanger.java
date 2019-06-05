@@ -182,10 +182,14 @@ public class RaftExchanger {
 
     private void registerCurrentNode() {
         Map<String, Collection<String>> metaMap = nodeConfig.getMetaNodeIP();
+        //todo xuelian
+        System.err.println("current node map : " + metaMap.toString());
         //if current ip existed in config list,register it
         if (metaMap != null && metaMap.size() > 0) {
             Collection<String> metas = metaMap.get(nodeConfig.getLocalDataCenter());
             String ip = NetUtil.getLocalAddress().getHostAddress();
+            //todo xuelian
+            System.err.println("current ip is : " + ip);
             if (metas != null && metas.contains(ip)) {
                 metaServerRegistry.register(new MetaNode(new URL(ip, 0), nodeConfig
                     .getLocalDataCenter()));
