@@ -87,7 +87,7 @@ public class MetaRepositoryService extends AbstractSnapshotProcess
     public RenewDecorate<MetaNode> put(String ipAddress, RenewDecorate<MetaNode> metaNode) {
         // todo xuelian
         System.err.println("get datacenter put begin: ");
-        write.lock();
+//        write.lock();
         try {
             String dataCenter = metaNode.getRenewal().getDataCenter();
             // todo xuelian
@@ -119,7 +119,7 @@ public class MetaRepositoryService extends AbstractSnapshotProcess
             LOGGER.error("Meta node add error!", e);
             throw new RuntimeException("Meta node add error!", e);
         } finally {
-            write.unlock();
+//            write.unlock();
         }
 
         return metaNode;
