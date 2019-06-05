@@ -199,8 +199,6 @@ public class MetaStoreService implements StoreService<MetaNode> {
 
                 nodeChangeResult.setVersion(metaNodeRepository.getVersion());
             }
-            // mock by xuelian
-            System.err.println("datacenter=" + dataCenter + " ;version=" + metaNodeRepository.getVersion());
             versionMap.put(dataCenter, metaNodeRepository.getVersion());
 
             Map<String, RenewDecorate<MetaNode>> dataMap = metaNodeRepository.getNodeMap();
