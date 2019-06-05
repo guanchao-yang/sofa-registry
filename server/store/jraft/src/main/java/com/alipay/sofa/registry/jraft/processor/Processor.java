@@ -101,11 +101,14 @@ public class Processor {
                     serviceId);
                 throw new NoSuchMethodException("Can not find method from processor！");
             }
-
+            //todo xuelian
+            System.err.println(" before set com.alipay.sofa.registry.jraft.processor.Processor.process");
             Object[] methodArg = request.getMethodArgs();
             //            MethodHandle methodHandle = MethodHandles.lookup().unreflect(appServiceMethod);
             //            Object ret = methodHandle.bindTo(target).invokeWithArguments(methodArg);
             Object ret = appServiceMethod.invoke(target, methodArg);
+            //todo xuelian
+            System.err.println(" after set com.alipay.sofa.registry.jraft.processor.Processor.process");
             if (ret != null) {
                 return ProcessResponse.ok(ret).build();
             } else {
