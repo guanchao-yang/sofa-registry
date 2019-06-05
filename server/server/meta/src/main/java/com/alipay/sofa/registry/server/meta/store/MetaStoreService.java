@@ -117,6 +117,7 @@ public class MetaStoreService implements StoreService<MetaNode> {
         String ipAddress = metaNode.getNodeUrl().getIpAddress();
         System.err.println("step 1");
         write.lock();
+        System.err.println("step 2");
         try {
             //todo xuelian
             System.err.println("step put before and service is " + metaRepositoryService);
