@@ -99,6 +99,8 @@ public class DataRepositoryService extends AbstractSnapshotProcess
                     dataNodeRepository = nodeRepository;
                 }
             }
+            //todo xuelian
+            System.err.println("set version : " + System.currentTimeMillis());
 
             dataNodeRepository.setVersion(System.currentTimeMillis());
 

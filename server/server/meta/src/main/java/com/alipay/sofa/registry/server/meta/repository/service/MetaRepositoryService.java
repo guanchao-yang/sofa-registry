@@ -88,6 +88,7 @@ public class MetaRepositoryService extends AbstractSnapshotProcess
         write.lock();
         try {
             String dataCenter = metaNode.getRenewal().getDataCenter();
+            System.err.println("get datacenter : " + dataCenter);
 
             NodeRepository<MetaNode> metaNodeRepository = registry.get(dataCenter);
             if (metaNodeRepository == null) {
@@ -289,6 +290,7 @@ public class MetaRepositoryService extends AbstractSnapshotProcess
 
     @Override
     public Map<String/*dataCenter*/, NodeRepository> getNodeRepositories() {
+        System.err.println("get map : " + registry);
         return registry;
     }
 
