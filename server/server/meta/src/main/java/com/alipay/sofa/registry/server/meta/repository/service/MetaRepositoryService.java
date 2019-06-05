@@ -85,9 +85,12 @@ public class MetaRepositoryService extends AbstractSnapshotProcess
 
     @Override
     public RenewDecorate<MetaNode> put(String ipAddress, RenewDecorate<MetaNode> metaNode) {
+        // todo xuelian
+        System.err.println("get datacenter put begin: ");
         write.lock();
         try {
             String dataCenter = metaNode.getRenewal().getDataCenter();
+            // todo xuelian
             System.err.println("get datacenter : " + dataCenter);
 
             NodeRepository<MetaNode> metaNodeRepository = registry.get(dataCenter);
