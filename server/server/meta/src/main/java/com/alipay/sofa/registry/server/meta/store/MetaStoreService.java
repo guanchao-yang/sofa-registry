@@ -120,9 +120,15 @@ public class MetaStoreService implements StoreService<MetaNode> {
         try {
             //todo xuelian
             System.err.println("step put before and service is " + metaRepositoryService);
-            //存放到repository（自动通过jraft同步给集群）
-            metaRepositoryService.put(ipAddress, new RenewDecorate(metaNode,
-                RenewDecorate.DEFAULT_DURATION_SECS));
+            // todo xuelian
+            try {
+                //存放到repository（自动通过jraft同步给集群）
+                metaRepositoryService.put(ipAddress, new RenewDecorate(metaNode,
+                        RenewDecorate.DEFAULT_DURATION_SECS));
+                //todo xuelian
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
             //todo xuelian
             System.err.println("step put after");
 
