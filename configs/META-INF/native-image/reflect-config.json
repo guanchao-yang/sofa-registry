@@ -128,7 +128,7 @@
     "allPublicClasses" : true
   },
   {
-    "name":" com.alipay.sofa.registry.common.model.Node$NodeType",
+    "name":"com.alipay.sofa.registry.common.model.Node$NodeType",
     "allPublicFields": true,
     "allDeclaredFields":true,
     "allDeclaredConstructors" : true,
