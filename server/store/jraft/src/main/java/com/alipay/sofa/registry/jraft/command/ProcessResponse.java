@@ -25,11 +25,11 @@ import java.io.Serializable;
  */
 public class ProcessResponse implements Serializable {
 
-    private final Object  entity;
+    private Object  entity;
 
-    private final Boolean success;
+    private Boolean success;
 
-    private final String  redirect;
+    private String  redirect;
 
     /**
      * constructor
