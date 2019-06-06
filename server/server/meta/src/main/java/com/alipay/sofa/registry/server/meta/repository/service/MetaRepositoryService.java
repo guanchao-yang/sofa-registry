@@ -106,14 +106,17 @@ public class MetaRepositoryService extends AbstractSnapshotProcess
             System.err.println("setversion : " + System.currentTimeMillis());
             metaNodeRepository.setVersion(System.currentTimeMillis());
 
+            System.err.println("MetaRepositoryService.put 1");
             Map<String/*ipAddress*/, RenewDecorate<MetaNode>> metaNodes = metaNodeRepository
                 .getNodeMap();
+            System.err.println("MetaRepositoryService.put 2");
             RenewDecorate oldRenewDecorate = metaNodes.get(ipAddress);
             if (oldRenewDecorate != null && oldRenewDecorate.getRenewal() != null) {
                 LOGGER.info("Meta node with ipAddress:" + ipAddress + " has already existed!");
             }
-
+            System.err.println("MetaRepositoryService.put 3");
             metaNodes.put(ipAddress, metaNode);
+            System.err.println("MetaRepositoryService.put 4");
 
         } catch (Exception e) {
             LOGGER.error("Meta node add error!", e);
