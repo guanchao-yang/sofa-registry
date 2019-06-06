@@ -120,7 +120,7 @@ public class MetaStoreService implements StoreService<MetaNode> {
         System.err.println("step 2");
 //        try {
             //todo xuelian
-            System.err.println("step put before and service is " + metaRepositoryService);
+            System.err.println("step put before and service is ");
             // todo xuelian
             try {
                 //存放到repository（自动通过jraft同步给集群）
