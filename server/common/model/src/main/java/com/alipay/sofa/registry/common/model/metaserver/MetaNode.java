@@ -26,17 +26,17 @@ import com.alipay.sofa.registry.common.model.store.URL;
  */
 public class MetaNode implements Node {
 
-    private NodeType nodeType = NodeType.META;
+    private NodeType   nodeType = NodeType.META;
 
-    private URL      nodeUrl;
+    private URL        nodeUrl;
 
-    private String   dataCenter;
+    private String     dataCenter;
 
-    private String         name;
+    private String     name;
 
-    private String         regionId;
+    private String     regionId;
 
-    private NodeStatus     nodeStatus;
+    private NodeStatus nodeStatus;
 
     /**
      * constructor
