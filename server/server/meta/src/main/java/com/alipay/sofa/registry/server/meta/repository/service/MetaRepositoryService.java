@@ -293,7 +293,6 @@ public class MetaRepositoryService extends AbstractSnapshotProcess
 
     @Override
     public Map<String/*dataCenter*/, NodeRepository> getNodeRepositories() {
-        System.err.println("get map : " + registry);
         return registry;
     }
 
