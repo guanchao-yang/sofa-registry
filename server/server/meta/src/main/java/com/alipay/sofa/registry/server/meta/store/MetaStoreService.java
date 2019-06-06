@@ -118,31 +118,31 @@ public class MetaStoreService implements StoreService<MetaNode> {
         System.err.println("step 1");
         //        write.lock();
         System.err.println("step 2");
-//        try {
+        //        try {
+        //todo xuelian
+        System.err.println("step put before and service is ");
+        // todo xuelian
+        try {
+            //存放到repository（自动通过jraft同步给集群）
+            metaRepositoryService.put(ipAddress, new RenewDecorate(metaNode,
+                RenewDecorate.DEFAULT_DURATION_SECS));
             //todo xuelian
-            System.err.println("step put before and service is ");
-            // todo xuelian
-            try {
-                //存放到repository（自动通过jraft同步给集群）
-                metaRepositoryService.put(ipAddress, new RenewDecorate(metaNode,
-                    RenewDecorate.DEFAULT_DURATION_SECS));
-                //todo xuelian
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            //todo xuelian
-            System.err.println("step put after");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //todo xuelian
+        System.err.println("step put after");
 
-            //触发通知(需要通知data/session)
-            nodeChangeResult = getNodeChangeResult();
-            firePushDataListTask(nodeChangeResult, "addMetaNode");
-            firePushSessionListTask(nodeChangeResult, "addMetaNode");
+        //触发通知(需要通知data/session)
+        nodeChangeResult = getNodeChangeResult();
+        firePushDataListTask(nodeChangeResult, "addMetaNode");
+        firePushSessionListTask(nodeChangeResult, "addMetaNode");
 
-            LOGGER.info("Add single meta node {} success!", metaNode);
+        LOGGER.info("Add single meta node {} success!", metaNode);
 
-//        } finally {
-            //            write.unlock();
-//        }
+        //        } finally {
+        //            write.unlock();
+        //        }
 
         return nodeChangeResult;
     }
