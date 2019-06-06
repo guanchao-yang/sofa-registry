@@ -84,6 +84,17 @@
   "allPublicClasses" : true
 },
 {
+  "name":"com.alipay.sofa.registry.jraft.command.ProcessResponse",
+  "allPublicFields": true,
+  "allDeclaredFields":true,
+  "allDeclaredConstructors" : true,
+  "allPublicConstructors" : true,
+  "allDeclaredMethods" : true,
+  "allPublicMethods" : true,
+  "allDeclaredClasses" : true,
+  "allPublicClasses" : true
+},
+{
   "name":"com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
