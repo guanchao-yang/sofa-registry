@@ -118,7 +118,7 @@ public class MetaStoreService implements StoreService<MetaNode> {
         System.err.println("step 1");
         //        write.lock();
         System.err.println("step 2");
-        try {
+//        try {
             //todo xuelian
             System.err.println("step put before and service is " + metaRepositoryService);
             // todo xuelian
@@ -140,9 +140,9 @@ public class MetaStoreService implements StoreService<MetaNode> {
 
             LOGGER.info("Add single meta node {} success!", metaNode);
 
-        } finally {
+//        } finally {
             //            write.unlock();
-        }
+//        }
 
         return nodeChangeResult;
     }
