@@ -74,6 +74,7 @@
 },
 {
   "name":"com.alipay.sofa.registry.jraft.command.ProcessRequest",
+  "allPublicFields": true,
   "allDeclaredFields":true,
   "allDeclaredConstructors" : true,
   "allPublicConstructors" : true,
