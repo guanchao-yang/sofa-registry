@@ -1293,6 +1293,7 @@
 {
   "name":"java.lang.String",
   "allDeclaredMethods":true,
+  "fields":[{"name":"value"}],
   "methods":[{"name":"<init>","parameterTypes":["java.lang.String"] }]
 },
 {
@@ -1659,15 +1660,13 @@
   "name":"org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.JsonMappingExceptionMapper",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
-  "allPublicMethods":true,
-  "allDeclaredConstructors":true
+  "allPublicMethods":true
 },
 {
   "name":"org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.JsonParseExceptionMapper",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
-  "allPublicMethods":true,
-  "allDeclaredConstructors":true
+  "allPublicMethods":true
 },
 {
   "name":"org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.ProviderBase",
