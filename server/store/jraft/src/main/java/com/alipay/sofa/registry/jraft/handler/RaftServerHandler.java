@@ -99,8 +99,6 @@ public class RaftServerHandler implements ChannelHandler {
             return;
         }
         ProcessRequest processRequest = (ProcessRequest) message;
-        //todo xuelian
-        System.err.println("server received request : " + processRequest);
 
         long start = System.currentTimeMillis();
 
