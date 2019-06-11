@@ -28,8 +28,6 @@ echo "native image path is [$svm]"
 #svm=~/tools/graalvm-ce-19.0.0/bin/native-image
 #$graalvm_home/bin/java  -agentlib:native-image-agent=config-output-dir=$CONFIG_PATH -jar server/server/meta/target/registry-server-meta-executable.jar
 
-GC_OPT="-R:+VerboseGC -R:+PrintGC -R:+PrintGCTimeStamps -R:+PrintGCTimes"
-
 CONFIG_OPT="--no-server --allow-incomplete-classpath --report-unsupported-elements-at-runtime --no-fallback -H:+PrintImageHeapPartitionSizes"
 #CONFIG_OPT="${CONFIG_OPT} --enable-url-protocols=http"
 #CONFIG_OPT="${CONFIG_OPT} -H:+PrintClassInitialization"
@@ -76,4 +74,4 @@ CONFIG_OPT="${CONFIG_OPT} -Dio.netty.noUnsafe=true"
 #Specify where is the C library file which defines the data structure used in exposed API. 
 #CONFIG_OPT="${CONFIG_OPT} -H:CLibraryPath=native"
 #Set your own $native_image enviroment variable which should refer to the bin\native-image file in your graalvm JDK. 
-$svm $CONFIG_OPT $SVM_OPT $GC_OPT -cp $CP com.alipay.sofa.registry.server.meta.MetaApplication
+$svm $CONFIG_OPT $SVM_OPT -cp $CP com.alipay.sofa.registry.server.meta.MetaApplication
