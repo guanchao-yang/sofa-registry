@@ -22,7 +22,8 @@ else
     echo "error : GRAALVM_HOME is not set in environment"
     exit 1
 fi
-svm=${GRAALVM_HOME}/bin/native-image
+#svm=${GRAALVM_HOME}/bin/native-image
+svm=/home/admin/staticcompile/graalvm-ee-19.0.0/jre/lib/svm/bin/native-image
 echo "native image path is [$svm]"
 #svm=~/tools/graalvm-ee-19.0.0/jre/lib/svm/bin/native-image
 #svm=~/tools/graalvm-ce-19.0.0/bin/native-image
