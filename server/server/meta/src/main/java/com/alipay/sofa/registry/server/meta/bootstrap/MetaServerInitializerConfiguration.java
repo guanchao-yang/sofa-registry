@@ -50,7 +50,7 @@ public class MetaServerInitializerConfiguration implements SmartLifecycle {
             metaServerBootstrap.doInitialized();
             LOGGER.info("Started MetaServer");
 //             added
-             System.exit(0);
+//             System.exit(0);
             MetaServerInitializerConfiguration.this.running.set(true);
         } catch (Exception ex) {
             MetaServerInitializerConfiguration.this.running.set(false);
