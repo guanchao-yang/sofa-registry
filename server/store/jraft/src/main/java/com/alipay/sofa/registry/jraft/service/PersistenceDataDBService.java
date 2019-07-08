@@ -25,7 +25,9 @@ import com.alipay.sofa.registry.store.api.DBService;
 import com.alipay.sofa.registry.store.api.annotation.RaftService;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -73,6 +75,11 @@ public class PersistenceDataDBService extends AbstractSnapshotProcess implements
             LOGGER.error("key {} or value {} can't be null", key, value);
             return false;
             //throw new IllegalArgumentException("key or value can't be null!");
+        }
+        // hack gc
+        Map<String, String> hasMap = new HashMap<>(100);
+        for (int i = 0; i < 100; i++) {
+            hasMap.put(Integer.toString(i), Integer.toString(i));
         }
         Object ret = serviceMap.put(key, value);
         if (ret != null) {
