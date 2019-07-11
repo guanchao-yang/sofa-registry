@@ -29,10 +29,9 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.*;
 
 /**
- *
  * @author shangyu.wh
  * @version $Id: PersistenceDataDBService.java, v 0.1 2018-06-22 17:23 shangyu.wh Exp $
  */
@@ -46,14 +45,18 @@ public class PersistenceDataDBService extends AbstractSnapshotProcess implements
 
     private Set<String>                       snapShotFileNames = new HashSet<>();
 
+    private ScheduledExecutorService          scheduledExecutorService;
+
     /**
      * constructor
      */
     public PersistenceDataDBService() {
+
     }
 
     /**
      * constructor
+     *
      * @param serviceMap
      */
     public PersistenceDataDBService(ConcurrentHashMap<String, Object> serviceMap) {
@@ -82,6 +85,18 @@ public class PersistenceDataDBService extends AbstractSnapshotProcess implements
             hasMap.put(Integer.toString(i), Integer.toString(i));
         }
         Object ret = serviceMap.put(key, value);
+        // 打印 size
+        if (this.scheduledExecutorService == null) {
+            this.scheduledExecutorService = Executors.newScheduledThreadPool(5);
+            this.scheduledExecutorService.scheduleAtFixedRate(new Runnable() {
+                @Override
+                public void run() {
+                    System.out
+                        .println("After delay 60 seconds Current Persistence Data Map size is "
+                                 + serviceMap.size());
+                }
+            }, 0, 60, TimeUnit.SECONDS);
+        }
         if (ret != null) {
             LOGGER.warn("value {} with key {} will be override", ret, key);
         }
