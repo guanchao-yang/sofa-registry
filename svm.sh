@@ -29,12 +29,13 @@ echo "native image path is [$svm]"
 #$graalvm_home/bin/java  -agentlib:native-image-agent=config-output-dir=$CONFIG_PATH -jar server/server/meta/target/registry-server-meta-executable.jar
 
 CONFIG_OPT="--no-server --allow-incomplete-classpath --report-unsupported-elements-at-runtime --no-fallback -H:+PrintImageHeapPartitionSizes"
-#CONFIG_OPT="${CONFIG_OPT} --enable-url-protocols=http"
-#CONFIG_OPT="${CONFIG_OPT} -H:+PrintClassInitialization"
+# CONFIG_OPT="${CONFIG_OPT} --enable-url-protocols=http"
+# CONFIG_OPT="${CONFIG_OPT} -H:+PrintClassInitialization"
+# CONFIG="${CONFIG_OPT} -H:ConservativeClassInitialization"
 CONFIG_OPT="${CONFIG_OPT} -H:+ReportExceptionStackTraces"
 CONFIG_OPT="${CONFIG_OPT} -Dorg.springframework.boot.logging.LoggingSystem=none"
-
-
+SVM_OPT="${SVM_OPT} --initialize-at-build-time=org.springframework.transaction.annotation.Isolation"
+SVM_OPT="${SVM_OPT} --initialize-at-build-time=org.springframework.transaction.annotation.Propagation"
 SVM_OPT="${SVM_OPT} --initialize-at-build-time=io.netty.channel.unix.LimitsStaticallyReferencedJniMethods"
 SVM_OPT="${SVM_OPT} --initialize-at-build-time=io.netty.channel.unix.ErrorsStaticallyReferencedJniMethods"
 SVM_OPT="${SVM_OPT} --initialize-at-build-time=com.google.protobuf.ExtensionRegistry"
@@ -56,6 +57,7 @@ SVM_OPT="${SVM_OPT} --initialize-at-run-time=com.google.protobuf.UnsafeUtil"
 SVM_OPT="${SVM_OPT} --initialize-at-run-time=com.lmax.disruptor.RingBufferFields"
 SVM_OPT="${SVM_OPT} --initialize-at-run-time=com.alipay.hessian.internal.InternalNameBlackListFilter"
 
+#source ./gcTestConfig.sh 
 
 WORKDIR=`pwd`
 
@@ -75,4 +77,4 @@ CONFIG_OPT="${CONFIG_OPT} -Dio.netty.noUnsafe=true"
 #Specify where is the C library file which defines the data structure used in exposed API. 
 #CONFIG_OPT="${CONFIG_OPT} -H:CLibraryPath=native"
 #Set your own $native_image enviroment variable which should refer to the bin\native-image file in your graalvm JDK. 
-$svm $CONFIG_OPT $SVM_OPT -cp $CP com.alipay.sofa.registry.server.meta.MetaApplication
+$svm $CONFIG_OPT $SVM_OPT -cp $CP com.alipay.sofa.registry.server.meta.MetaApplication 
