@@ -30,6 +30,7 @@ import com.alipay.sofa.registry.task.listener.TaskEvent.TaskType;
 import com.alipay.sofa.registry.task.listener.TaskListenerManager;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -54,6 +55,22 @@ public class PersistentDataResource {
 
     @Autowired
     private TaskListenerManager taskListenerManager;
+
+    /**
+     * http://localhost:9615/persistentData/gc
+     * @param data
+     * @return
+     */
+    @GET
+    @Path("gc")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Result gc(PersistenceData data) {
+        System.gc();
+        Result result = new Result();
+        result.setMessage("GC called");
+        result.setSuccess(true);
+        return result;
+    }
 
     @POST
     @Path("put")
